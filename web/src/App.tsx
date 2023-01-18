@@ -1,8 +1,14 @@
-function App() {
-  const [count, setCount] = useState(0)
+import Habits from "./components/Habits"
+import './styles/global.css';
 
+function App() {
   return (
-    <h1>Hello world</h1>
+    <>
+      <Habits completed={3} />
+      <Habits completed={10} />
+      <Habits completed={121} />
+  
+    </>
   )
 }
 
