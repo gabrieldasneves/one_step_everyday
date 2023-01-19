@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   },
   texto:{
     color:'#f8f8f8',
+    fontFamily:'Inter_800ExtraBold'
     
   }
 });
