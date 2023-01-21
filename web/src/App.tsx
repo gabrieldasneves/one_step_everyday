@@ -1,15 +1,16 @@
-import Habits from "./components/Habits"
+//import Habits from "./components/Habits"
+import { Header } from './components/Header';
 import './styles/global.css';
 
-function App() {
+
+export function App() {
   return (
-    <>
-      <Habits completed={3} />
-      <Habits completed={10} />
-      <Habits completed={121} />
-  
-    </>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='w-full maw-w-5xl px-6 flex flex-col gap-16'>
+        <Header />
+      </div>
+    </div>
   )
 }
 
-export default App
+
