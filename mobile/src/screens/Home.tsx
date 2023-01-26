@@ -11,7 +11,9 @@ const amountOfDaysToFill = minimumSummaryDatesSizes - datesFromYearStart.length
 export function Home(){
     return (
         <View className="flex-1 bg-background px-8 pt-16">
+            
             <Header />
+
             <View className='flex-row mt-6 mb-2'>
                 {
                     weekDays.map((weekDay,i) => (
@@ -34,13 +36,11 @@ export function Home(){
                         amountOfDaysToFill > 0 && Array.from({
                             length:amountOfDaysToFill
                         }).map( (_, index) => (
-                            <View className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40" activeOpacity={0.7}  style={{width:DAY_SIZE, height:DAY_SIZE}}/>
+                            <View key={index} className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40" style={{width:DAY_SIZE, height:DAY_SIZE}}/>
                         ))
                     }
                 </View>
             </ScrollView>            
-            
- 
             
         </View> 
     )
