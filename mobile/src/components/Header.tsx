@@ -5,6 +5,7 @@ import colors from 'tailwindcss/colors'
 import {useNavigation} from "@react-navigation/native"
 
 export function Header(){
+    
     const {navigate} = useNavigation()
 
     return (
