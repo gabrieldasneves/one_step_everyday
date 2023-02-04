@@ -31,7 +31,7 @@ export function New(){
                     Qual o seu novo comprometimento?
                 </Text>
 
-                <TextInput placeholder="Exercícios, dormir 8 horas, etc" placeholderTextColor={colors.zinc[400]} className="h-12 pl-4 rounded-lg mt-3 bg-zinc-300 text-while focus:border-2 focus:border-green-600" />
+                <TextInput placeholder="Exercícios, dormir 8 horas, etc" placeholderTextColor={colors.zinc[400]} className="h-12 pl-4 rounded-lg mt-3 bg-zinc-300 text-while border-2 border-zinc-800 focus:border-green-600" />
 
                 <Text className="font-semibold mt-4 mb-3 text-white text-base">
                     Qual a recorrência?
